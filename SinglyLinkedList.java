@@ -125,8 +125,9 @@ public class SinglyLinkedList<E> {
             previous = current;
             current = next;
         }
-        
 
+
+        
         head = previous;
     }
 }
