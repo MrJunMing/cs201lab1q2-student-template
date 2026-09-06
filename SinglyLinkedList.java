@@ -70,19 +70,11 @@ public class SinglyLinkedList<E> {
         StringBuilder sb = new StringBuilder();
         Node<E> current = head;
 
-        sb.append("[");
-
         while (current != null) {
             sb.append(current.getElement());
-
-            if (current.getNext() != null) {
-                sb.append(", ");
-            }
-
             current = current.getNext();
         }
 
-        sb.append("]");
         return sb.toString();
     }
 
@@ -127,7 +119,7 @@ public class SinglyLinkedList<E> {
         }
 
 
-        
+
         head = previous;
     }
 }
